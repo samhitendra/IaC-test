@@ -1,7 +1,7 @@
 Import-Module ServerManager
 add-pssnapin VMware.VimAutomation.Core
 
-Connect-VIServer b6-vc-65.cloud.ucs
+Connect-VIServer b6-vc-65.cloud.ucs -User 'shambhavi@cloud.ucs' -Password 'Acc1234$$'
 
 $VMs=Get-VM | Where { $_.Name -like "b6-testvm-*"}
 
